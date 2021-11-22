@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(29, 29, 29); */
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+#home-page {
+  height: 90vh;
+  background-color: rgb(29, 29, 29) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-holder {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin-top: 4rem;
+}
+
+.text-box {
+  width: 48%;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.heads {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.main-head {
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+
+span {
+  font-weight: 600;
+}
+
+.sub-head {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.text-tag {
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.your-address {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  margin-top: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 1rem;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.show-address {
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.buttons {
+  margin-top: 0.5rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn {
+  background-color: rgb(40, 40, 40);
+  padding: 0.5rem 1rem;
+  margin-right: 5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+.card {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.144);
+}
+
+.card-container {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.staked-balance,
+.rewards-unstake,
+.rewards-maturity,
+.early-withdraws,
+.maturity {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+.value-desc,
+.text-desc {
+  font-size: 1rem;
+}
+
+.text-desc {
+  font-weight: 300;
+}
+
+.value-time {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 950px) {
+  .content-holder {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  #home-page {
+    height: 100%;
+  }
+
+  .content-holder {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .text-box {
+    margin-bottom: 2rem;
+    width: 90%;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .card {
+    padding: 1rem 0.5rem;
+  }
+
+  .text-box {
+    align-items: center;
+  }
+
+  .btn {
+    margin: 10px;
+  }
+}

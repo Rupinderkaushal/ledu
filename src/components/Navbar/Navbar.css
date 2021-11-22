@@ -1,0 +1,34 @@
+.nav-bg {
+  background-color: rgb(43, 43, 43);
+  height: 10vh;
+  position: -webkit-sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 2rem;
+}
+
+.connect-wallet-btn {
+  margin-right: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: rgb(29, 29, 29);
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.connect-wallet-btn:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+.connected-wallet {
+  margin-right: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: rgb(29, 29, 29);
+  color: gray;
+  cursor: cursor;
+  border: 1px solid rgb(58, 58, 58);
+}
+
